@@ -1,255 +1,315 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-summary: ''
-date: 2026-01-05
+summary: 'Research portfolio of Roberto Machado'
+date: 2026-07-16
 type: landing
 
 sections:
-  # Developer Hero - Gradient background with name, role, social, and CTAs
+
+  # Hero
   - block: dev-hero
     id: hero
     content:
       username: me
-      greeting: "Hi, I'm"
+      greeting: "Hello, I’m"
       show_status: true
       show_scroll_indicator: true
+
       typewriter:
         enable: true
-        prefix: "I build"
+        prefix: "I work on"
         strings:
-          - "full-stack web apps"
-          - "scalable APIs"
-          - "beautiful UIs"
-          - "open source tools"
+          - "spatial data science"
+          - "geographic information science"
+          - "urban and territorial analysis"
+          - "explainable artificial intelligence"
+          - "spatial literacy"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
+
       cta_buttons:
-        - text: View My Work
+        - text: Explore My Projects
           url: "#projects"
           icon: arrow-down
-        - text: Get In Touch
+
+        - text: Contact
           url: "#contact"
           icon: envelope
+
     design:
       style: centered
       avatar_shape: circle
       animations: true
+
       background:
         color:
           light: "#fafafa"
           dark: "#0a0a0f"
+
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
-  
-  # Filterable Portfolio - Alpine.js powered project filtering
+
+
+  # Projects
   - block: portfolio
     id: projects
+
     content:
-      title: "Featured Projects"
-      subtitle: "A selection of my recent work"
+      title: "Research Projects"
+      subtitle: "Selected projects in spatial data science, GIS and explainable AI"
+
       count: 0
+
       filters:
         folders:
           - projects
+
       buttons:
         - name: All
-          tag: '*'
-        - name: Full-Stack
-          tag: Full-Stack
-        - name: Frontend
-          tag: Frontend
-        - name: Backend
-          tag: Backend
+          tag: "*"
+
+        - name: Spatial Data Science
+          tag: Spatial Data Science
+
+        - name: Urban Analysis
+          tag: Urban Analysis
+
+        - name: Explainable AI
+          tag: Explainable AI
+
+        - name: Open Science
+          tag: Open Science
+
       default_button_index: 0
-      # Archive link auto-shown if more projects exist than 'count' above
-      # archive:
-      #   enable: false  # Set to false to explicitly hide
-      #   text: "Browse All"  # Customize text
-      #   link: "/work/"  # Custom URL
+
     design:
       columns: 3
+
       background:
         color:
           light: "#ffffff"
           dark: "#0d0d12"
+
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Visual Tech Stack - Icons organized by category
+
+
+  # Research Tools and Methods
   - block: tech-stack
-    id: skills
+    id: tools
+
     content:
-      title: "Tech Stack"
-      subtitle: "Technologies I use to build things"
+      title: "Research Tools and Methods"
+      subtitle: "Technologies and analytical approaches used in my research"
+
       categories:
-        - name: Languages
+
+        - name: Programming and Data
           items:
-            - name: TypeScript
-              icon: devicon/typescript
-            - name: JavaScript
-              icon: devicon/javascript
             - name: Python
               icon: devicon/python
-            - name: Go
-              icon: devicon/go
-        - name: Frontend
-          items:
-            - name: React
-              icon: devicon/react
-            - name: Next.js
-              icon: devicon/nextjs
-            - name: Tailwind CSS
-              icon: devicon/tailwindcss
-            - name: Alpine.js
-              icon: devicon/alpinejs
-        - name: Backend
-          items:
-            - name: Node.js
-              icon: devicon/nodejs
-            - name: Express
-              icon: devicon/express
+
+            - name: Jupyter
+              icon: devicon/jupyter
+
             - name: PostgreSQL
               icon: devicon/postgresql
-            - name: Redis
-              icon: devicon/redis
-        - name: DevOps
+
+            - name: Git
+              icon: devicon/git
+
+
+        - name: Spatial Analysis
           items:
+            - name: GeoPandas
+              icon: devicon/python
+
+            - name: OSMnx
+              icon: devicon/python
+
+            - name: Network Analysis
+              icon: devicon/python
+
+            - name: Spatial Statistics
+              icon: devicon/python
+
+
+        - name: Machine Learning and XAI
+          items:
+            - name: Scikit-learn
+              icon: devicon/python
+
+            - name: XGBoost
+              icon: devicon/python
+
+            - name: SHAP
+              icon: devicon/python
+
+            - name: LIME
+              icon: devicon/python
+
+
+        - name: Open and Interactive Research
+          items:
+            - name: GitHub
+              icon: brands/github
+
+            - name: Streamlit
+              icon: devicon/python
+
             - name: Docker
               icon: devicon/docker
-            - name: AWS
-              icon: devicon/amazonwebservices
-            - name: GitHub Actions
+
+            - name: Open Science
               icon: brands/github
-            - name: Vercel
-              icon: devicon/vercel
+
     design:
       style: grid
       show_levels: false
+
       background:
         color:
           light: "#f5f5f5"
           dark: "#08080c"
+
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Experience Timeline
+
+
+  # Selected Experience
   - block: resume-experience
     id: experience
+
     content:
-      title: Experience
+      title: "Selected Experience"
       date_format: Jan 2006
+
       items:
-        - title: Senior Software Engineer
-          company: Tech Corp
+
+        - title: Geography Teacher
+          company: Portuguese School of Dili
           company_url: ''
           company_logo: ''
-          location: San Francisco, CA
-          date_start: '2023-01-01'
+          location: Dili, Timor-Leste
+          date_start: '2026-03-27'
           date_end: ''
           description: |2-
-            * Lead development of microservices architecture serving 1M+ users
-            * Improved API response time by 40% through optimization
-            * Mentored team of 5 junior developers
-            * Tech stack: React, Node.js, PostgreSQL, AWS
-        - title: Full-Stack Developer
-          company: Startup Inc
+            * Teaching Geography and digital technologies
+            * Development of activities involving spatial reasoning and geographic information
+            * Contribution to curriculum planning, assessment and departmental work
+
+
+        - title: Visiting Researcher
+          company: The University of Queensland
+          company_url: 'https://www.uq.edu.au/'
+          company_logo: ''
+          location: Brisbane, Australia
+          date_start: '2023-01-01'
+          date_end: '2024-12-31'
+          description: |2-
+            * Research in geography, spatial data analysis and remote sensing
+            * Development of computational approaches to geographic information
+            * International collaboration in spatial data science
+
+
+        - title: Strategic Adviser
+          company: National Parliament of Timor-Leste
           company_url: ''
           company_logo: ''
-          location: Remote
-          date_start: '2021-06-01'
+          location: Dili, Timor-Leste
+          date_start: '2021-01-01'
           date_end: '2022-12-31'
           description: |2-
-            * Built and deployed 3 production applications from scratch
-            * Implemented CI/CD pipeline reducing deployment time by 60%
-            * Collaborated with design team on UI/UX improvements
-            * Tech stack: Next.js, Express, MongoDB, Docker
-        - title: Junior Developer
-          company: Web Agency
+            * Strategic and territorial analysis
+            * Support for institutional planning and public policy
+            * Preparation of evidence-based information for decision-making
+
+
+        - title: Geographic Information and Territorial Planning Consultant
+          company: Hexis
           company_url: ''
           company_logo: ''
-          location: New York, NY
-          date_start: '2020-01-01'
-          date_end: '2021-05-31'
+          location: Portugal
+          date_start: '2017-01-01'
+          date_end: '2019-12-31'
           description: |2-
-            * Developed client websites using modern web technologies
-            * Maintained and updated legacy codebases
-            * Participated in code reviews and agile ceremonies
-            * Tech stack: React, WordPress, PHP, MySQL
+            * Geographic information systems and spatial analysis
+            * Territorial planning and applied research
+            * Preparation, processing and interpretation of spatial data
+
     design:
       columns: '1'
+
       background:
         color:
           light: "#ffffff"
           dark: "#0d0d12"
+
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # Recent Blog Posts
-  - block: collection
-    id: blog
-    content:
-      title: Recent Posts
-      subtitle: 'Thoughts on web development, tech, and more'
-      text: ''
-      filters:
-        folders:
-          - blog
-        exclude_featured: false
-      count: 3
-      order: desc
-    design:
-      view: card
-      columns: 3
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-  
-  # Contact Section
-  - block: contact-info
-    id: contact
-    content:
-      title: Get In Touch
-      subtitle: "Let's build something amazing together"
-      text: |-
-        I'm always interested in hearing about new projects and opportunities.
-        Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
-      email: alex@example.com
-      autolink: true
-    design:
-      columns: '1'
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-  
-  # CTA Card
+
+
+  # Open Science
   - block: cta-card
+    id: open-science
+
     content:
-      title: "Open to Opportunities"
+      title: "Open and Reproducible Research"
+
       text: |-
-        I'm currently looking for **senior engineering** or **tech lead** roles.
-        
-        Let's connect and discuss how I can help your team.
+        My research combines open-source software, reproducible computational
+        workflows, interactive applications and transparent analytical methods.
+
+        Research code and notebooks are made available through GitHub whenever
+        data licences and publication conditions permit.
+
       button:
-        text: 'Download Resume'
-        url: uploads/resume.pdf
+        text: "View My GitHub"
+        url: "https://github.com/RobertoOlivetree"
+        icon: brands/github
         new_tab: true
+
     design:
       card:
-        # Light mode: soft pastel theme gradient | Dark mode: rich deep gradient
-        css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
+        css_class: "bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700"
         text_color: dark
+
       background:
         color:
           light: "#f5f5f5"
           dark: "#08080c"
+
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+
+
+  # Contact
+  - block: contact-info
+    id: contact
+
+    content:
+      title: "Contact"
+
+      subtitle: "Research collaboration and professional enquiries"
+
+      text: |-
+        I welcome enquiries concerning research collaboration, spatial data
+        science, geographic information systems, urban and territorial
+        analysis, explainable artificial intelligence and open science.
+
+      email: YOUR_EMAIL@example.com
+      autolink: true
+
+    design:
+      columns: '1'
+
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+
       spacing:
         padding: ["4rem", "0", "6rem", "0"]
 ---
