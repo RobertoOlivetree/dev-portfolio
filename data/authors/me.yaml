@@ -1,4 +1,4 @@
-sschema: hugoblox/author/v1
+schema: hugoblox/author/v1
 slug: me
 is_owner: true
 
@@ -64,7 +64,7 @@ education:
       experimental validation of the GEOInsightLab platform.
     button:
       text: Explore GEOInsightLab
-      url: https://github.com/RobertoOlivetree/GEOinsightLab
+      url: https://github.com/RobertoOlivetree/GEOInsightLab
       icon: brands/github
 
 experience:
@@ -113,7 +113,7 @@ skills:
       - label: OSMnx and Network Analysis
         level: 5
 
-  - name: Machine Learning and XAI
+  - name: Machine Learning and Explainable AI
     items:
       - label: Scikit-learn
         level: 5
@@ -137,7 +137,7 @@ skills:
       - label: Jupyter
         level: 5
       - label: Streamlit
-        level: 3
+        level: 4
 
   - name: Research Practice
     items:
