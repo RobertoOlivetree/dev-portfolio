@@ -13,7 +13,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Roberto de Oliveira Machado"
+    name: "Roberto Olivetree""
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
@@ -21,7 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: "Geographer and Spatial Data Scientist"
     # Site meta description for search engines and social sharing
-    description: "Academic portfolio of Roberto Machado, focused on Geographic Information Science, spatial data science, urban and territorial analysis, spatial literacy, and explainable artificial intelligence."
+    description: "Academic portfolio of Roberto de Oliveira Machado, focused on Geographic Information Science, spatial data science, urban and territorial analysis, spatial literacy, and explainable artificial intelligence."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)
